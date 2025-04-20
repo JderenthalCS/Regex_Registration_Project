@@ -1,0 +1,41 @@
+.root {
+    -fx-background-color: #030d04;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #5effd6;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #9effa5;
+    -fx-padding: 6 10;
+    -fx-border-width: 2;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #888;
+    -fx-effect: dropshadow(three-pass-box, #5effd6, 5, 0, 0, 0);
+}
+
+.text-field:focused {
+    -fx-border-color: #9effa5;
+    -fx-effect: dropshadow(three-pass-box, #9effa5, 8, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: linear-gradient(to right, #9effa5, #5effd6);
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 16;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #5effd6, 10, 0.4, 0, 0);
+    -fx-border-color: transparent;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #5effd6, #9effa5);
+    -fx-effect: dropshadow(gaussian, #9effa5, 15, 0.5, 0, 0);
+}
